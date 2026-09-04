@@ -52,8 +52,8 @@
           <div class="panel-heading"><div><span class="eyebrow">Para finalizar</span><h2>Seus dados</h2></div></div>
           <label>Nome completo<input name="name" type="text" autocomplete="name" required placeholder="Digite seu nome"></label>
           <label>Telefone<input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(64) 99999-9999"></label>
-          <label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
-          <label>Endereço<input name="address" type="text" autocomplete="street-address" required placeholder="Rua, número, bairro e referência"></label>
+          <label class="pickup-option"><input id="pickup-order" name="pickup" type="checkbox"><span><strong>Retirar no balcão</strong><small>Marque esta opção se não precisar de entrega.</small></span></label>
+          <label id="address-label">Endereço<input id="customer-address" name="address" type="text" autocomplete="street-address" required placeholder="Rua, número, bairro e referência"></label>
           <label>Observação <span>opcional</span><textarea name="note" rows="3" placeholder="Ex.: retirar cebola, ponto da carne..."></textarea></label>
           <p class="form-note">Confira os itens antes de confirmar. O WhatsApp abrirá com a mensagem pronta para você enviar.</p>
           <p class="form-status" id="form-status" role="alert" aria-live="assertive"></p>
