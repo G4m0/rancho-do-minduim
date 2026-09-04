@@ -5,10 +5,8 @@ const categories=[
 ["espetoes","Espetões Grandes","Serve 4 pessoas. O completo acompanha arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete."],
 ["porcoes","Porções Completas",""],["premium","Pratos Premium",""],["caldos","Caldos",""],
 ["lanches","Lanches Minduim","Molhos: ketchup, maionese, barbecue, mostarda e mel, maionese de alho e maionese verde."],
-["drinks","Drinks","Bebidas alcoólicas disponíveis somente presencialmente para maiores de 18 anos."],
-["doses","Doses","Disponíveis somente presencialmente para maiores de 18 anos."],
-["cervejas","Cervejas 600ml","Disponíveis somente presencialmente para maiores de 18 anos."],
-["bebidas","Bebidas Diversas",""]
+["bebidas","Bebidas Diversas",""],
+["sucos","Sucos & Cremes","Sucos naturais preparados na hora e cremes de frutas."]
 ].map(([id,name,note])=>({id,name,note}));
 
 const raw=[
@@ -64,19 +62,18 @@ const raw=[
 ["lanches","SubMinduim Baguete","Baguete 30cm, 200g de carne bovina ou frango, muçarela, tomate, alface e molhos à escolha.",19.9],
 ["lanches","SubMinduim Francês","Pão francês, 100g de carne bovina ou frango, muçarela, tomate, alface e molhos à escolha.",9.9],
 ["lanches","Minduim Burguer","Pão de hambúrguer, 150g de hambúrguer bovino, muçarela, tomate e alface.",21.9],
-["drinks","Batidas","50ml de vodka, morango, uva ou maracujá.",24.9,1],["drinks","Caipirinha","50ml de Cachaça 51, morango ou limão, açúcar e gelo.",14.9,1],
-["drinks","Caipirinha Suíça","50ml de Cachaça 51, limão, leite condensado e gelo.",19.9,1],["drinks","Caipiroskas","50ml de vodka, morango ou limão e açúcar.",19.9,1],
-["drinks","Cozumel","Antártica, Amstel ou Brahma, limão, sal e gelo.",9.9,1],["drinks","Cuba-Libre","50ml de rum, limão, Coca-Cola e gelo.",19.9,1],
-["drinks","Gin Tônica","50ml de gin, morango, limão ou laranja.",24.9,1],["drinks","Preparo Cozumel","Gelo, suco de limão e sal. Servido em taça de vinho.",5],
-["drinks","Sex on the Beach","50ml de vodka, suco de laranja natural, xarope de morango e gelo.",24.9,1],
-["drinks","Soda Italiana","Água com gás e xarope de morango, maçã verde ou groselha.",14.9],
-["drinks","Tequila Surinse","50ml de tequila, suco de laranja natural, xarope de morango e gelo.",24.9,1],
-["doses","Campari","Dose.",22,1],["doses","Para Tudo","Dose.",6,1],["doses","Pinga 51","Dose.",5,1],["doses","Tequila","Dose.",20,1],["doses","Whisky Old Par","Dose.",25,1],["doses","Whisky Red Label","Dose.",20,1],
-["cervejas","Heineken 600ml","Cerveja 600ml.",12.9,1],["cervejas","Amstel 600ml","Cerveja 600ml.",11.9,1],["cervejas","Antártica Original 600ml","Cerveja 600ml.",10.9,1],["cervejas","Antártica Pilsen 600ml","Cerveja 600ml.",9.9,1],["cervejas","Brahma 600ml","Cerveja 600ml.",9.9,1],
+["bebidas","Soda Italiana","Água com gás e xarope de morango, maçã verde ou groselha.",14.9],
 ["bebidas","Água com Gás","Unidade.",6],["bebidas","Água Mineral sem Gás","Unidade.",5],["bebidas","Água Tônica Lata","Lata.",7],
 ["bebidas","Limoneto H2O 1,5L","Garrafa 1,5L.",12],["bebidas","Limoneto H2O 500ml","Garrafa 500ml.",8],["bebidas","Monster 473ml","Lata 473ml.",12],["bebidas","Red Bull 250ml","Lata 250ml.",15],
 ["bebidas","Refrigerante 1L","Garrafa 1L.",12],["bebidas","Refrigerante 2L","Garrafa 2L.",15],["bebidas","Refrigerante 600ml","Garrafa 600ml.",10],["bebidas","Refrigerante KS","Garrafa KS.",5],["bebidas","Refrigerante Lata","Lata.",6],["bebidas","Suco Kapo","Unidade.",5],
-["bebidas","Long Neck","Unidade.",9.9,1],["bebidas","Ice 51","Unidade.",11.9,1],["bebidas","Copo com Gelo / Limão ou Laranja","Copo preparado com gelo e limão ou laranja.",1]
+["bebidas","Copo com Gelo / Limão ou Laranja","Copo preparado com gelo e limão ou laranja.",1],
+["sucos","Suco de Laranja Natural — 500ml","Suco de laranja natural preparado na hora.",11.9],
+["sucos","Suco de Laranja Natural — 1L","Suco de laranja natural preparado na hora.",19.9],
+["sucos","Suco de Limão Natural — 500ml","Suco de limão natural preparado na hora.",11.9],
+["sucos","Suco de Limão Natural — 1L","Suco de limão natural preparado na hora.",19.9],
+["sucos","Suco de Polpa — 500ml","Escolha entre morango, maracujá, uva ou abacaxi.",11.9],
+["sucos","Suco de Polpa — 1L","Escolha entre morango, maracujá, uva ou abacaxi.",19.9],
+["sucos","Creme — 500ml","Escolha entre morango, maracujá, uva ou abacaxi.",14.9]
 ];
 const products=raw.map((x,i)=>({id:"p"+i,category:x[0],name:x[1],description:x[2],price:x[3],adultOnly:Boolean(x[4])}));
 const state={cart:JSON.parse(localStorage.getItem("rancho_cart")||"{}"),currentCategory:categories[0].id,lastWhatsAppUrl:""};
