@@ -54,6 +54,14 @@
           <label>Telefone<input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(64) 99999-9999"></label>
           <label class="pickup-option"><input id="pickup-order" name="pickup" type="checkbox"><span><strong>Retirar no balcão</strong><small>Marque esta opção se não precisar de entrega.</small></span></label>
           <label id="address-label">Endereço<input id="customer-address" name="address" type="text" autocomplete="street-address" required placeholder="Rua, número, bairro e referência"></label>
+          <fieldset class="payment-fieldset">
+            <legend>Forma de pagamento</legend>
+            <div class="payment-options">
+              <label><input name="payment" type="radio" value="pix" required><span><strong>Pix</strong><small>Pagamento por Pix</small></span></label>
+              <label><input name="payment" type="radio" value="dinheiro" required><span><strong>Dinheiro</strong><small>Pagamento na entrega ou retirada</small></span></label>
+              <label><input name="payment" type="radio" value="cartao" required><span><strong>Cartão</strong><small>Débito ou crédito</small></span></label>
+            </div>
+          </fieldset>
           <label>Observação <span>opcional</span><textarea name="note" rows="3" placeholder="Ex.: retirar cebola, ponto da carne..."></textarea></label>
           <p class="form-note">Confira os itens antes de confirmar. O WhatsApp abrirá com a mensagem pronta para você enviar.</p>
           <p class="form-status" id="form-status" role="alert" aria-live="assertive"></p>
