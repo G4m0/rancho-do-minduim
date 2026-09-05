@@ -73,7 +73,8 @@ const raw=[
 ["sucos","Suco de Limão Natural — 1L","Suco de limão natural preparado na hora.",19.9],
 ["sucos","Suco de Polpa — 500ml","Escolha entre morango, maracujá, uva ou abacaxi.",11.9],
 ["sucos","Suco de Polpa — 1L","Escolha entre morango, maracujá, uva ou abacaxi.",19.9],
-["sucos","Creme — 500ml","Escolha entre morango, maracujá, uva ou abacaxi.",14.9]
+["sucos","Creme — 500ml","Escolha entre morango, maracujá, uva ou abacaxi.",14.9],
+["porcoes","Picadinho de Carne na Chapa","400g de filé bovino em tiras, mandioca gratinada, tomate, cebola e arroz.",79.9]
 ];
 const products=raw.map((x,i)=>({id:"p"+i,category:x[0],name:x[1],description:x[2],price:x[3],adultOnly:Boolean(x[4])}));
 const state={cart:JSON.parse(localStorage.getItem("rancho_cart")||"{}"),currentCategory:categories[0].id,lastWhatsAppUrl:""};
