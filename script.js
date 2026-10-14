@@ -1,4 +1,4 @@
-const CONFIG={whatsappNumber:"5564992455576",orderWebhookUrl:"https://rancho-minduim-api.fernandochafariz2019.chatgpt.site/api/orders"};
+const CONFIG={whatsappNumber:"5564993156664",orderWebhookUrl:"https://rancho-minduim-api.fernandochafariz2019.chatgpt.site/api/orders"};
 const categories=[
 ["espetos","Espetos","Acompanhamento: mandioca, molho vermelho e vinagrete."],
 ["jantas","Jantas Completas","Jantinha servida com arroz, feijão tropeiro, mandioca, molho de tomate, vinagrete e molhos verde/alho."],
