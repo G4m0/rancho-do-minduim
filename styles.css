@@ -11,3 +11,5 @@
 .toast{position:fixed;left:50%;bottom:96px;z-index:50;transform:translate(-50%,20px);width:max-content;max-width:calc(100% - 32px);padding:12px 17px;border-radius:999px;background:#17120e;color:#fff;font-size:.9rem;font-weight:800;opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(min-width:620px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.menu-content{padding-inline:20px}.brand-hero{min-height:390px}.checkout-content{grid-template-columns:.9fr 1.1fr;align-items:start;padding-inline:20px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.summary-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;color:var(--muted)}.order-breakdown .order-total{margin-top:8px}

@@ -71,13 +71,13 @@
         <section class="order-panel" aria-labelledby="items-title">
           <div class="panel-heading"><h2 id="items-title">Itens escolhidos</h2><span id="cart-count-badge">0 itens</span></div>
           <div id="cart-items"></div>
-          <div class="order-total"><span>Total</span><strong id="order-total">R$ 0,00</strong></div>
+          <div class="order-breakdown" aria-live="polite"><div class="summary-row"><span>Subtotal</span><strong id="order-subtotal">R$ 0,00</strong></div><div id="delivery-fee-row"><div class="summary-row"><span>Taxa de entrega</span><strong id="delivery-fee">R$ 0,00</strong></div></div><div class="order-total"><span>Total</span><strong id="order-total">R$ 0,00</strong></div></div>
         </section>
         <form id="customer-form" class="customer-form">
           <div class="panel-heading"><div><span class="eyebrow">Para finalizar</span><h2>Seus dados</h2></div></div>
           <label>Nome completo<input name="name" type="text" autocomplete="name" required placeholder="Digite seu nome"></label>
           <label>Telefone<input id="customer-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(64) 99999-9999"></label>
-          <label class="pickup-option"><input id="pickup-order" name="pickup" type="checkbox"><span><strong>Retirar no balcão</strong><small>Marque esta opção se não precisar de entrega.</small></span></label>
+          <label class="pickup-option"><input id="pickup-order" name="pickup" type="checkbox"><span><strong>Retirar no balcão</strong><small>Entrega: taxa fixa de R$ 7,00. Retirada sem taxa.</small></span></label>
           <label id="address-label">Endereço<input id="customer-address" name="address" type="text" autocomplete="street-address" required placeholder="Rua, número, bairro e referência"></label>
           <fieldset class="payment-fieldset">
             <legend>Forma de pagamento</legend>
