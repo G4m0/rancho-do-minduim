@@ -13,3 +13,5 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
 .summary-row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;color:var(--muted)}.order-breakdown .order-total{margin-top:8px}
+
+.skewer-choice{display:grid;gap:6px;margin:4px 0 10px;font-size:.9rem;font-weight:700}.skewer-choice select{width:100%;min-height:48px;padding:10px;border:1px solid #e3ccb0;border-radius:10px;background:#fff8ee;color:var(--ink);font:inherit}
