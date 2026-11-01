@@ -25,7 +25,7 @@ const raw=[
 ["jantas","Janta Individual com Picanha","Espeto de picanha, arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete. Servida no prato.",44.9],
 ["jantas","Janta Econômica Frango","1/2 janta acompanhada de espetinho de frango com bacon.",19.9],
 ["jantas","Janta Econômica Contrafilé/Cupim","1/2 janta acompanhada de espetinho de contrafilé ou cupim.",24.9],
-["espetoes","Picanha Grande — Só Espeto","Espetão grande. Serve 4 pessoas.",130],["espetoes","Picanha Grande — Completo","Arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete. Serve 4 pessoas.",149.9],
+["espetoes","Picanha Grande — Só Espeto","Espetão grande. Serve 4 pessoas.",130],["espetoes","Picanha Grande — Completo","Arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete. Serve 4 pessoas.",159.9],
 ["espetoes","Fraldinha Grande — Só Espeto","Espetão grande. Serve 4 pessoas.",120],["espetoes","Fraldinha Grande — Completo","Arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete. Serve 4 pessoas.",144.9],
 ["espetoes","Cupim Grande — Só Espeto","Espetão grande. Serve 4 pessoas.",100],["espetoes","Cupim Grande — Completo","Arroz, feijão tropeiro, mandioca, molho vermelho e vinagrete. Serve 4 pessoas.",124.9],
 ["porcoes","Batatas Fritas Palito","400g de batatas palito crocantes, sal a gosto e ketchup. Serve 2 pessoas.",29.9],
